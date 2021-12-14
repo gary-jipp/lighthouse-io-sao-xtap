@@ -1,6 +1,6 @@
 # Introduction to State
 
-- [ ] React Render in Functional Components
+- [ ] Rendering of React Functional Components
 - [ ] What is State?
 - [ ] Why do we need to consider State
 - [ ] How React manages State:  the `useState` "hook"
