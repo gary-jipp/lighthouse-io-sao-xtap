@@ -1,0 +1,31 @@
+body{
+  background-color: lightblue;
+}
+
+.App {
+ text-align : center; 
+ font-family: sans-serif;
+}
+
+.canadiansports {
+  width: 45%
+}
+
+h1 {
+  color: red;
+  font-family: cursive;
+}
+
+p {
+padding: 0 10em;
+font-family: 'Gill Sans';
+}
+
+
+button {
+  height: 40px;
+  margin: 5px;
+  border: 5px solid red;
+  border-radius: 10%;
+  cursor: pointer;
+}
