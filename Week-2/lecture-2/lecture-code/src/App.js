@@ -33,6 +33,7 @@ export default function App() {
       <h1>Hello React</h1>
       <input type="text" onChange={onChange} value={input} />
       <button onClick={onClick}>Add to List</button>
+      
       <ul>{list}</ul>
     </div>
   );
