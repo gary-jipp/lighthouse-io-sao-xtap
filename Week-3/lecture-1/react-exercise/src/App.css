@@ -1,37 +1,30 @@
 .App {
-  margin: 1em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
- }
+  font-family: sans-serif;
+  text-align: center;
+}
 
- code {
-  padding: 0px;
-  margin:.2em;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
- }
- 
- ul {
-   list-style: none;
-   padding-left: 0;
- }
- 
- li {
-   padding: 5px;
-   margin: 2px;
-   width: 20em;
-   background-color: #EEE;
- }
- 
- li a {
-   color: grey;
- }
- 
- li:hover{
-   background-color: darkolivegreen;
-   color: white;
- }
- 
- li:hover a {
-   color: white;
- }
- 
+body {
+  background-color: beige;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: darkorange;
+}
+
+input {
+  margin: 1em;
+}
+
+button {
+  margin: 0.25em;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 10%;
+}
+
+h5 {
+  margin: 0em;
+  color: red;
+  font-size: 20px;
+}
