@@ -3,5 +3,5 @@
 - [ ] http requests (GET, POST, and others)
 - [ ] ajax - jQuery
 - [ ] fetch api - JavaScript
-- [ ] axios - npode module
+- [ ] axios - node module
 - [ ] useEffect 
