@@ -5,3 +5,7 @@
 - [ ] fetch api - JavaScript
 - [ ] axios - node module
 - [ ] useEffect 
+
+$.get('/tweeets')
+  .then(data=>renderTweets(data));
+  
