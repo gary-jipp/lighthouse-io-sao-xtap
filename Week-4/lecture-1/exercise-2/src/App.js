@@ -13,31 +13,19 @@ export default function App() {
   });
 
   const onLike1 = function() {
-    setLikes((prev) => ({
-      ...prev,
-      destination1: prev.destination1 + 1
-    }));
+    setLikes((prev) => ({ ...prev, destination1: prev.destination1 + 1 }));
   };
 
   const onDislike1 = function() {
-    setDislikes((prev) => ({
-      ...prev,
-      destination1: prev.destination1 + 1
-    }));
+    setDislikes((prev) => ({ ...prev, destination1: prev.destination1 + 1 }));
   };
 
   const onLike2 = function() {
-    setLikes((prev) => ({
-      ...prev,
-      destination2: prev.destination2 + 1
-    }));
+    setLikes((prev) => ({ ...prev, destination2: prev.destination2 + 1 }));
   };
 
   const onDislike2 = function() {
-    setDislikes((prev) => ({
-      ...prev,
-      destination2: prev.destination2 + 1
-    }));
+    setDislikes((prev) => ({ ...prev, destination2: prev.destination2 + 1 }));
   };
 
   const getResult = function() {
