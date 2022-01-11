@@ -1,6 +1,5 @@
 import "App.css";
 import { useState } from "react";
-import LikeButtons from "components/LikeButtons";
 import Destination from "components/Destination";
 
 export default function App() {
