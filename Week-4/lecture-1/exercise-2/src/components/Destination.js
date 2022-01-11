@@ -11,7 +11,6 @@ const Destination = function(props) {
       <p> Dislikes: {props.dislikes} </p>
     </div>
   );
-
 };
 
 export default Destination;

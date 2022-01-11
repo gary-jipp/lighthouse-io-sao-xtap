@@ -67,7 +67,7 @@ export default function App() {
           {getResult()}
         </div>
 
-        <Destination image="https://i.imgur.com/Uo6fNbd.jpeg"
+        <Destination image="https://i.imgur.com/7YeuCXh.jpeg"
           likes={likes.destination2} dislikes={dislikes.destination2} onLike={onLike2} onDislike={onDislike2} />
 
       </div>
