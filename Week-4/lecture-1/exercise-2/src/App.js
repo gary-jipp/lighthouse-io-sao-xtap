@@ -2,6 +2,7 @@ import "App.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+import LikeButtons from "components/LikeButtons";
 
 export default function App() {
   const [likes, setLikes] = useState({
@@ -61,16 +62,7 @@ export default function App() {
         <div>
           <p> Destination 1 </p>
           <img alt="travelImage" src="https://i.imgur.com/Uo6fNbd.jpeg" />
-
-          <div>
-            <button onClick={onLike1}>
-              <FontAwesomeIcon icon={faThumbsUp} />
-            </button>
-            <button onClick={onDislike1}>
-              <FontAwesomeIcon icon={faThumbsDown} />
-            </button>
-          </div>
-
+          <LikeButtons onLike={onLike1} onDislike={onDislike1}></LikeButtons>
           <p> Likes: {likes.destination1} </p>
           <p> Dislikes: {dislikes.destination1} </p>
         </div>
@@ -82,17 +74,7 @@ export default function App() {
         <div>
           <p> Destination 2 </p>
           <img alt="travelImage" src="https://i.imgur.com/7YeuCXh.jpeg" />
-
-          <div>
-            <button onClick={onLike2} >
-              <FontAwesomeIcon icon={faThumbsUp} />
-            </button>
-
-            <button onClick={onDislike2}>
-              <FontAwesomeIcon icon={faThumbsDown} />
-            </button>
-          </div>
-
+          <LikeButtons onLike={onLike2} onDislike={onDislike2}></LikeButtons>
           <p> Likes: {likes.destination2} </p>
           <p> Dislikes: {dislikes.destination2} </p>
         </div>
