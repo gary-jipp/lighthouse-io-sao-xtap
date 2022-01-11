@@ -1,8 +1,7 @@
 import "App.css";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import LikeButtons from "components/LikeButtons";
+import Destination from "components/Destination";
 
 export default function App() {
   const [likes, setLikes] = useState({
@@ -59,25 +58,18 @@ export default function App() {
     <>
       <h1> Popular Destination </h1>
       <div className="App">
-        <div>
-          <p> Destination 1 </p>
-          <img alt="travelImage" src="https://i.imgur.com/Uo6fNbd.jpeg" />
-          <LikeButtons onLike={onLike1} onDislike={onDislike1}></LikeButtons>
-          <p> Likes: {likes.destination1} </p>
-          <p> Dislikes: {dislikes.destination1} </p>
-        </div>
+
+        <Destination image="https://i.imgur.com/Uo6fNbd.jpeg"
+          likes={likes.destination1} dislikes={dislikes.destination1} onLike={onLike1} onDislike={onDislike1} />
+
         <div>
           <p className="popularDestinations"> Most Popular Destination </p>
           {getResult()}
         </div>
-        <br />
-        <div>
-          <p> Destination 2 </p>
-          <img alt="travelImage" src="https://i.imgur.com/7YeuCXh.jpeg" />
-          <LikeButtons onLike={onLike2} onDislike={onDislike2}></LikeButtons>
-          <p> Likes: {likes.destination2} </p>
-          <p> Dislikes: {dislikes.destination2} </p>
-        </div>
+
+        <Destination image="https://i.imgur.com/Uo6fNbd.jpeg"
+          likes={likes.destination2} dislikes={dislikes.destination2} onLike={onLike2} onDislike={onDislike2} />
+
       </div>
     </>
   );
