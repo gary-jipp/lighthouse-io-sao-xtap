@@ -7,6 +7,7 @@ export default function App() {
     destination1: 0,
     destination2: 0
   });
+
   const [dislikes, setDislikes] = useState({
     destination1: 0,
     destination2: 0
