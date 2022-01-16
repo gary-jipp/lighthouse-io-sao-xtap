@@ -6,7 +6,6 @@ export const actions = {
 const Contact = function(props) {
 
   const onClick = () => {
-    
     if (props.isSelected) {
       props.dispatch({ type: actions.DESELECT, payload: props.contact });
       return;

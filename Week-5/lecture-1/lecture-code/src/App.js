@@ -1,28 +1,10 @@
 import "App.css";
 import { useReducer } from "react";
-import Contact, { actions } from "Contact";
-
-
-const reducer = (state, action) => {
-  let newState;
-
-  switch (action.type) {
-    case actions.SELECT:
-      newState = [...state, action.payload];
-      break;
-    case actions.DESELECT:
-      newState = state.filter((contact) => contact.id !== action.payload.id);
-      break;
-    default:
-      newState = [...state];
-  }
-
-  return newState;
-};
+import Contact from "Contact";
+import contactReducer from "reducers/contactReducer";
 
 export default function App() {
-
-  const [selectedContacts, dispatch] = useReducer(reducer, []);
+  const [selectedContacts, dispatch] = useReducer(contactReducer, []);
 
   const contacts = [
     { id: 1, name: "Alice" },
