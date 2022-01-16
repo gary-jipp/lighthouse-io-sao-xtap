@@ -1,17 +1,14 @@
-export const actions = {
-  SELECT: "SELECT",
-  DESELECT: "DESELECT"
-};
-
 const Contact = function(props) {
+  const SELECT = "SELECT";
+  const DESELECT = "DESELECT";
 
   const onClick = () => {
     if (props.isSelected) {
-      props.dispatch({ type: actions.DESELECT, payload: props.contact });
+      props.dispatch({ type: DESELECT, payload: props.contact });
       return;
     }
 
-    props.dispatch({ type: actions.SELECT, payload: props.contact });
+    props.dispatch({ type: SELECT, payload: props.contact });
   };
 
   return (
