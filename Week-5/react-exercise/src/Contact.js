@@ -2,7 +2,7 @@ const Contact = function(props) {
   const SELECT = "SELECT";
   const DESELECT = "DESELECT";
 
-  const onClick = () => {
+  const onClick = function() {
     if (props.isSelected) {
       props.dispatch({ type: DESELECT, payload: props.contact });
       return;
