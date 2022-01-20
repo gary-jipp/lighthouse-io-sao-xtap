@@ -1,5 +1,5 @@
 /* eslint-disable testing-library/prefer-screen-queries */
-import { cleanup, fireEvent, render } from "@testing-library/react";
+import { cleanup, fireEvent, prettyDOM, render } from "@testing-library/react";
 import App from "../App";
 
 afterEach(cleanup);
@@ -15,7 +15,9 @@ describe("App", () => {
   });
 
   it("renders the list with 6 items", () => {
-    const { getAllByTestId } = render(<App />);
+    const { container, getAllByTestId } = render(<App />);
+
+    // console.log(prettyDOM(container));
 
     const listItems = getAllByTestId("language");
 

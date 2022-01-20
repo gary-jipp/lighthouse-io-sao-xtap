@@ -1,12 +1,13 @@
 import React from "react";
-import {screen, render, cleanup, fireEvent } from "@testing-library/react";
+import { screen, render, cleanup, prettyDOM, fireEvent } from "@testing-library/react";
 import App from "App";
 
 afterEach(cleanup);
 
 describe("App", () => {
   it("renders without crashing", () => {
-    render(<App />);
+    const { container }  = render(<App />);
+    console.log(prettyDOM(container));
   });
 
   it("renders the heading properly", () => {
