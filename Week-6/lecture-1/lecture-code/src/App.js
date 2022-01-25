@@ -13,6 +13,7 @@ export default function App() {
       .then(res => setData(res.data));
   }, []);
 
+  // Won't be loading on startup 
   // useEffect(() => getData(), [getData]);
 
   const addItem = function() {
