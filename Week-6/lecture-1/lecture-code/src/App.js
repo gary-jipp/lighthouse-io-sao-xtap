@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, } from 'react';
+import { useState, useCallback, } from 'react';
 import Header from 'components/Header';
 import uniqid from 'uniqid';
 import axios from 'axios';
