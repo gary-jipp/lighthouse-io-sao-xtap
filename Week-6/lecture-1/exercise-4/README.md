@@ -1,1 +1,1 @@
-# Minimal React App v5
+# Exercise 4 - Color Picker

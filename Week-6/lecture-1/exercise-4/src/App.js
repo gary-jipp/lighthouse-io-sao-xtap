@@ -5,12 +5,11 @@ import "App.css";
 export default function App() {
   const [colors, setColors] = useState([]);
   const [selectedColor, setSelectedColor] = useState("");
-  const url = `https://random-data-api.com/api/color/random_color?size=10`;
+  const url = `https://random-data-api.com/api/color/random_color?size=8`;
 
   const getData = useCallback(
     () => {
-      axios
-        .get(url)
+      axios.get(url)
         .then((result) => setColors(result.data));
     }, [url]);
 
@@ -40,7 +39,7 @@ export default function App() {
 
   return (
     <div className="App" style={{ backgroundColor: selectedColor }}>
-      <h1> Background Color Picker </h1>
+      <h2> Background Color Picker </h2>
       <button className="refetchBtn" onClick={onClick}>
         Get New Colors
       </button>
