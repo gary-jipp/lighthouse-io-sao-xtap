@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.boxBorder {
+  width: 20px;
+  height: 20px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.colorMap {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 20px;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.refetchBtn {
+  padding: 0.5em 2em;
+}
