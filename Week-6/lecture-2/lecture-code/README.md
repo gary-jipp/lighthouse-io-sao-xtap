@@ -8,4 +8,12 @@
 - [ ] Lifecycle Methods
 - [ ] Exercise (time permitting)
 
+React version:  16.7  -> 16.8
+
+useState()
+useEffect()
+useContext()
+
+useCallback()
+useRef()
 
